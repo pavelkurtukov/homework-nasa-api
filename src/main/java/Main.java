@@ -68,11 +68,12 @@ public class Main {
 
         // Создаём файл
         File file = new File(dirName + "\\" + fileName);
-        try {
+
+        /*try {
             file.createNewFile();
         } catch (IOException e) {
             System.out.println("Возникла ошибка при создании файла!");
-        }
+        }*/
 
         HttpGet fileRequest = new HttpGet(url);
 
